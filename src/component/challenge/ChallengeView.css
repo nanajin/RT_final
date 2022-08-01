@@ -1,0 +1,100 @@
+.challengeview{
+  margin-top: 30px;
+  margin-left: 20%;
+  margin-bottom: 30px;
+  background-color: linen;
+  width: 60%;
+  border-radius: 2em;
+}
+.view_title{
+  word-wrap: break-word; /*자동 줄바꿈*/
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px;
+  border-bottom: 1px solid rgb(159, 155, 155);
+  width: 70%;
+  margin: auto;
+}
+.view_contents{
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre-line;
+  padding: 20px;
+  width: 70%;
+  margin: auto;
+}
+.view_img{
+  width: 80%;
+  margin-left: 23%;
+  margin-top: 50px;
+}
+.view_img > img{
+  width: 70%;
+  height: fit-content;
+}
+.manager_admin{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 30%;
+  margin: auto;
+}
+.challenge_join{
+  margin-left: 47%;
+  margin-bottom: 100px;
+  background: none;
+  color: rgb(8, 101, 14);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 1em;
+  border: 2px solid rgb(26, 222, 39);
+}
+.challenge_join:hover{
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(8, 101, 14);
+  color: white;
+}
+.challenge_remove:hover, .challenge_rewrite:hover{
+  cursor: pointer;  
+}
+.challenge_rewrite, .challenge_remove{
+  margin-bottom: 30px;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 1em;
+}
+.link{
+  text-decoration: none;
+  color: rgb(5, 152, 24);
+}
+
+@media screen and (max-width: 768px){
+  .challengeview{
+    width: 80%;
+    margin-left: 10%;
+  }
+  .view_img{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 51px;
+  }
+  .manager_admin{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+  .challenge_join{
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+  }
+}

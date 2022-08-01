@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+.challenge > h3{
+  font-size: 50px;
+  color: rgb(5, 152, 24);
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+}
+.challenge > p{
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Do Hyeon', sans-serif;
+}
+.board{
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.board_entry{
+  text-decoration: none;
+  background: none;
+  border: 1px solid rgb(26, 222, 39);
+  border-radius: 1em;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(8, 101, 14);
+}
+.board_entry:hover{
+  transition: all 0.3s ease;
+  background-color: rgb(8, 101, 14);
+  color: white;
+}
+.challengeContent{
+  margin-left: 20%;
+}
+.challenge_cards{
+  padding: 4rem;
+  background:transparent;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+}
+
+@media screen and (max-width: 780px){
+  .challenge > h3{
+    font-size: 40px;
+  }
+}

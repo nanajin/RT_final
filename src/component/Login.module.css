@@ -1,0 +1,72 @@
+.login_title{
+    font-size: 50px;
+    color: rgb(5, 152, 24);
+    text-align: center;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+  }
+.bg{
+    width: 100%;
+    height: 100vh;
+}
+
+.welcome_title{
+    position: relative;
+    color: rgb(43, 209, 115);
+    font-size: 28px;
+    font-weight: bold;
+}
+.login_container{
+    width: 300px;
+    height: 500px;
+    background-color: black;
+    border-radius: 20px;
+    position: absolute;
+    top: 17%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: 20%;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 5px 5px 5px rgb(183, 183, 226);
+}
+.login_form{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.login_form > h2{
+  color: white;
+}
+.login_box{
+    width: 200px;
+    height: 30px;
+    margin: 10px;
+    font-size: 1.1rem;
+}
+.login_btn{
+  border: 1px solid white;
+  border-radius: 0.5em;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}
+.login_btn:hover{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    color: black;
+    background-color: white;
+}
+
+@media screen and (max-width: 780px) {
+  .login_container{
+     position: initial;
+     margin-top: 50%;
+     margin-left: 50%;
+  }
+}

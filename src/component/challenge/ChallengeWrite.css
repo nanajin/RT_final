@@ -1,0 +1,74 @@
+.board_container{
+  background-color: rgb(255, 243, 226);
+  width: 60%;
+  margin: 20px auto;
+  border-radius: 1em;
+}
+.board_container > h1{
+  padding: 10px;
+  border-bottom: 1px solid black;
+  width: fit-content;
+  color: rgb(214, 55, 55);
+  margin-left: 20%;
+}
+.board_container > form{
+  margin-top: 20px;
+}
+.board_title, .board_contents{
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(190, 187, 187);
+  width: 60%;
+  font-size: 25px;
+  padding: 15px;
+  margin: 20px 20%;
+}
+.board_contents{
+  border: 1px solid rgb(190, 187, 187);
+  border-radius: 1em;
+  font-size: 16px;
+  height: 500px;
+  resize: none;
+}
+.post_btn{
+  margin-left: 35%;
+}
+.post_btn > button{
+  margin-right: 70px;
+  margin-bottom: 30px;
+  background: none;
+  color: rgb(5, 152, 24);
+  font-size: 15px;
+  font-weight: bold;
+  border: 2px solid rgb(26, 222, 39);
+  border-radius: 1em;
+}
+input:focus{
+  outline: none;
+}
+.post_btn > button:hover{
+  cursor: pointer;
+  background-color: rgb(35, 172, 20);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.board_file{
+  margin-left: 20%;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 780px){
+  .board_container{
+    width: 80%;
+  }
+  .board_container > h1{
+    font-size: 25px;
+    margin: auto;
+  }
+  .board_file{
+    margin-left: 33%;
+  }
+  .board_title, .board_contents{
+    margin: auto;
+    margin-top: 15px;
+  }
+}

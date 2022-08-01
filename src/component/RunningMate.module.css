@@ -1,0 +1,114 @@
+.none{
+  display: none;
+}
+.mate > h3{
+  font-size: 50px;
+  color: rgb(5, 152, 24);
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.friend{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  /* margin-left: 33%; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.friend_box{
+  width: 40%;
+  height: 100px;
+  margin-top: 20px;
+  border: 2px solid black;
+  border-radius: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 5px 5px 5px rgb(206, 206, 242);
+}
+.friend_box >img{
+  width: 70px;
+  height: 70px;
+  /* margin-left: 40px; */
+}
+.friend_box p{
+  font-family: 'Do hyeon';
+  color: rgb(16, 155, 16);
+  font-size: 20px;
+}
+.chat_btn{
+  background: none;
+  font-size: 40px;
+  border: none;
+  /* margin-left: 70px; */
+}
+.chat_btn:hover{
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  color: green;
+}
+.search{
+  width: 300px;
+  height: 50px;
+  margin: auto;
+}
+.user{
+  height: 50px;
+  font-size: 40px;
+  border-radius: 5em;
+  border-style: none;
+  float: right;
+  background: transparent;
+  cursor: pointer;
+}
+.chat{
+  height: 50px;
+  border-radius: 5em;
+  border-style: none;
+  float: right;
+  margin-right: 10px;
+  background: transparent;
+  font-size: 40px;
+  cursor: pointer;
+}
+.user:hover, .chat:hover{
+  color: rgb(135, 201, 36);
+  transition: all 0.3s ease-in-out;
+}
+form{
+  text-align: center;
+  margin-top: 30px;
+}
+.search_input{
+  border: none;
+  border-bottom: 2px solid rgb(225, 225, 225);
+  font-size: 20px;
+}
+.search_btn{
+  background: none;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+}
+.search_btn:hover{
+  cursor: pointer;
+}
+@media screen and (max-width: 780px){
+  .follow_box{
+    width: 100%;
+  }
+  .friend_box{
+    width: 80%;
+  }
+  .mate > h3{
+    font-size: 40px;
+  }
+  .search_input{
+    margin-left: 50px;
+  }
+}

@@ -1,0 +1,90 @@
+.register_title{
+  font-size: 50px;
+  color: rgb(5, 152, 24);
+  text-align: center;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+}
+.register_bg{
+    width: 100%;
+    height: 100vh;
+}
+.register_container{
+  width: 300px;
+  height: 500px;
+  background-color: black;
+  border-radius: 20px;
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin-top: 20%;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 5px 5px 5px rgb(183, 183, 226);
+}
+.register_form{
+    position: absolute;
+    top: 53%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+}
+.register_container > h2{
+  color: rgb(38, 235, 124);
+  margin-top: 10%;
+  font-size: 30px;
+  text-align: center;
+}
+.register_box{
+  width: 100px;
+  height: 30px;
+  margin: 10px;
+  font-size: 1.1rem;
+}
+.register_radio{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin-left: 30%;
+    color: white;
+}
+.name_btn, .email_btn{
+  border: 1px solid white;
+  border-radius: 0.5em;
+  font-size: 10px;
+  font-weight: 500;
+  color: white;
+  padding: 10px;
+  /* margin: 20px; */
+  margin-top: 20px;
+  margin-left: 65%;
+  background: none;
+}
+.name_btn{
+  margin-top: 17%;
+}
+.register_btn{
+  border: 1px solid white;
+  border-radius: 0.5em;
+  font-size: 17px;
+  font-weight: 500;
+  color: white;
+  padding: 10px;
+  margin-top: 75%;
+  background: none;
+
+}
+.name_btn:hover, .email_btn:hover, .register_btn:hover{
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: black;
+  background-color: white;
+}
+
+@media screen and (max-width: 780px) {
+  .register_container{
+    position: initial;
+    margin-top: 50%;
+    margin-left: 50%;
+  }
+}
