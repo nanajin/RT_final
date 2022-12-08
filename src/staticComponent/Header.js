@@ -33,7 +33,7 @@ function Header(props){
     if(props.line === "false"){
       setHeaderLine(false);
     }
-  },props);
+  },[props]);
  
   return(
     <>

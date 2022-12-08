@@ -12,7 +12,7 @@ function CardItem(props) {
       method: 'GET',
       responseType: 'blob',
     }).then(res=>{
-      console.log(res);
+      // console.log(res);
       const myFile = new File([res.data], 'imgName');
       const reader = new FileReader();
       reader.onload= ev=>{

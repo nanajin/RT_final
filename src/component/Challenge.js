@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../staticComponent/Footer";
 import Header from "../staticComponent/Header";
-import Sliders from "./Slider";
 import styles from './Challenge.module.css';
 import {Link} from 'react-router-dom';
 import CardItem from "./CardItem";
 import './Cards.css';
 import axios from "axios";
 import Fade from 'react-reveal/Fade';
-import LoginWarning from "./LoginWarning";
 import { useRecoilState } from "recoil";
 import {loginState, userState} from '../staticComponent/state';
 
@@ -16,9 +14,6 @@ function Challenge(){
   const [login, setLogin] = useRecoilState(loginState);
   const [user, setUser] = useRecoilState(userState); //서버 데이터 가져오기
   
-  useEffect(()=>{
-    console.log(login);
-  })
   const [state, setState] =useState({
     boardList: [],
   })
@@ -75,12 +70,7 @@ function Challenge(){
         })}
         </div>
         
-
-        {/* <div className={styles.challengeContent}>
-          <Sliders/>
-        </div> */}
       </div> 
-      {/* <LoginWarning/> */}
       <Footer/>
     </>
   )

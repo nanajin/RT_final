@@ -15,7 +15,7 @@ const JoinRoom = () => {
   const current_url = window.location.href; //현재주소 
   const url = new URL(current_url);
   const urlParams = url.searchParams;
-  console.log(`"url:  ${urlParams}`);
+  // console.log(`"url:  ${urlParams}`);
   // const {paramsName, paramsRoom} = queryString.parse(current_url);
   // const [name, setName] = useState("");
   // const [room, setRoom] = useState("");

@@ -40,7 +40,7 @@ app.post("/reactBackend/write", (req, res)=>{
     let title = req.body.title;
     let contents = req.body.contents;
     let filename = req.body.filename;
-    console.log(filename);
+    // console.log(filename);
     const sqlQuery = "INSERT INTO board(title, contents, filename, view_cnt) values(?,?,?,0)";
     db.query(sqlQuery,[title, contents, filename], (err, result)=>{
       console.log(err);
@@ -53,7 +53,7 @@ app.post("/reactBackend/write", (req, res)=>{
 });
 //이미지 업로드 
 app.post("/reactBackend/image", upload.single("file"), (req, res, next)=>{
-  console.log(req.file);
+  // console.log(req.file);
   res.send({
     fileName: req.file.filename
   });
@@ -73,7 +73,7 @@ app.post("/reactBackend/managerwrite", (req, res)=>{
     let title = req.body.title;
     let contents = req.body.contents;
     let filename = req.body.filename;
-    console.log(filename);
+    // console.log(filename);
     const sqlQuery = "INSERT INTO managerboard(title, contents, filename, view_cnt) values(?,?,?,0)";
     db.query(sqlQuery,[title, contents, filename], (err, result)=>{
       console.log(err);

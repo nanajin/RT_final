@@ -30,7 +30,7 @@ function MyRecordView(){
       url: '/running/',
       params: { memberName: user},
     }).then(res=>{
-      console.log(res.data.data);
+      // console.log(res.data.data);
       setState({
         ...state,
         recordList: res.data.data,

@@ -68,7 +68,7 @@ function Run() {
       coords: { latitude, longitude },
     } = await getPosition();
     // setPosition({ latitude:35.17837541970289, longitude:126.9094573165221 });
-    console.log("current Position : ", latitude, longitude);
+    // console.log("current Position : ", latitude, longitude);
     // setPosition(latitude,longitude)
     setPosition({
       latitude: latitude,

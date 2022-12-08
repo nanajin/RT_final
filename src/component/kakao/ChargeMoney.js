@@ -10,7 +10,7 @@ import { userState } from "../../staticComponent/state";
 //모달 페이지
 function ChargeMoney(props){
   const [user, setUser] = useRecoilState(userState);
-  console.log(props.distance);
+  // console.log(props.distance);
   const distance = props.distance*1000;
   const [money, setMoney] = useState(distance);  //1km에 1000원씩
   const navigate = useNavigate();

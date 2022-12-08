@@ -46,7 +46,7 @@ function ChallengeRegister(){
       data: formData,
     }).then((res)=>{
       alert("챌린지 정식 등록 성공!");
-      console.log(res.data);
+      // console.log(res.data);
     }).catch(e=>{
       <ErrorPage/>
     })
